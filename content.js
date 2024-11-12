@@ -1,8 +1,10 @@
+const AUTH_BUTTON_STYLE =
+  "position: fixed; top: 10px; right: 10px; z-index: 1000;";
+const AUTH_BUTTON_SELECTOR =
+  "#swagger-ui > div > div:nth-child(2) > div.scheme-container > section > div > button";
+const SWAGGER = document.querySelector(".swagger-ui");
+
 function moveAuthButton() {
-  const AUTH_BUTTON_STYLE =
-    "position: fixed; top: 10px; right: 10px; z-index: 1000;";
-  const AUTH_BUTTON_SELECTOR =
-    "#swagger-ui > div > div:nth-child(2) > div.scheme-container > section > div > button";
   if (!document.querySelector(AUTH_BUTTON_SELECTOR)) return;
   const AUTH_LOGIN_SELECTOR = "div.modal-ux";
   document.querySelector(AUTH_BUTTON_SELECTOR).style = AUTH_BUTTON_STYLE;
@@ -16,9 +18,7 @@ if (SWAGGER) {
 }
 
 const observer = new MutationObserver(() => {
-  const SWAGGER = document.querySelector(".swagger-ui");
   if (SWAGGER) {
-    helloworld();
     moveAuthButton();
   }
   // observer.disconnect();
