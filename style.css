@@ -1,0 +1,14 @@
+#swagger-toggle-button {
+    background-color: #32329f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  #swagger-toggle-button:hover {
+    background-color: #5555ff;
+  }
+  
