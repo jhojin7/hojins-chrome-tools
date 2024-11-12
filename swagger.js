@@ -26,9 +26,3 @@
 //   });
 // }
 
-function moveAuthButton(){
-  const AUTH_BUTTON_STYLE = "position: fixed; top: 10px; right: 10px; z-index: 1000;"
-  const AUTH_BUTTON_SELECTOR = "#swagger-ui > div > div:nth-child(2) > div.scheme-container > section > div > button"
-  document.querySelector("div.modal-ux").style = AUTH_BUTTON_STYLE;
-  document.querySelector(AUTH_BUTTON_SELECTOR).style= AUTH_BUTTON_STYLE;
-}
